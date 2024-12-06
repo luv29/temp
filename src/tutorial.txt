@@ -1,0 +1,28 @@
+1. Open empty folder in vs code.
+2. in cmd, npm init / npm init -y (-y = by-default all yes)
+3. make redme.md in vs code and write it for github.
+4. Create github repa, and follow the commands written there to stup git repo.
+
+To push empty folders in git: 
+    we add a file name '.gitkeep' inside that empty folder.
+
+To prevent some files from being pushed in git:
+    Make a file '.gitignore' and write the names of those files inside it.
+    There are gitignore generators online, that tell what files are most likely to be in there.
+
+'.env' file:
+    It contains the enivironment variables required for project
+
+To prevent restarting server after every change:
+    We install package 'nodemon', it automatically restartes after every change.
+    It is not a main dependency, only used during development so we add it as dev dependency.
+    npm install --save-dev nodemon / mpm i -D nodemon
+
+Basic Project Structure:
+    We write code inside a src folder.
+    src folder generally has these folders: mkdir controllers db middlewares models routes utils
+
+Prettier:
+    mpm i -D Prettier
+    make file '.prettierrc' to do formatting
+    make file '.prettierignore' and mention files in which prettier will not be applied
