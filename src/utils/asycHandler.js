@@ -6,7 +6,7 @@ const asyncHandler = (requestHandler) => {
 
 export {asyncHandler}
 
-/* or
+/* or using async await
 const asyncHandler = (fn) => async (req, res, next) => {
     try {
         await fn(req, res, next)
