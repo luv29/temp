@@ -18,6 +18,11 @@ To prevent restarting server after every change:
     It is not a main dependency, only used during development so we add it as dev dependency.
     npm install --save-dev nodemon / mpm i -D nodemon
 
+Setting up package.json:
+    to use import , export we add "type": "module"
+    in scripts we add, "dev": "nodemon stc/index.js"
+    now whenever we run 'npm run dev' the above script is executed
+
 Basic Project Structure:
     We write code inside a src folder.
     src folder generally has these folders: mkdir controllers db middlewares models routes utils
@@ -26,3 +31,13 @@ Prettier:
     mpm i -D Prettier
     make file '.prettierrc' to do formatting
     make file '.prettierignore' and mention files in which prettier will not be applied
+
+npm i dotenv mongoose express:
+    These 3 will be used in every backed project
+    dotenv is not compatible with import as of now, so we have to use experimental features for that.
+    So we have to do some minor change in the "dev".
+
+Connecting Database:
+    Make account on mongoDB atlas and get a database from there.
+    We added PORT, MONGODB_URI in .env and DB_NAME in constants.js
+    
