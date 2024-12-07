@@ -40,4 +40,20 @@ npm i dotenv mongoose express:
 Connecting Database:
     Make account on mongoDB atlas and get a database from there.
     We added PORT, MONGODB_URI in .env and DB_NAME in constants.js
+
+HTTP: Hyper Test Transfer Protocol
+Differece between HTTP and HTTPs:
+    HTTPs encrypts and sends data while HTTP sends raw data.
+
+URL: Uniform Resource Locator
+URI: Uniform Resource Identifier
+URL, URI and URN are used interchangeably
+
+HRRP headers:
+    Headers are metadata: data about the data
+    Request header- from client
+    response header- from server
+    Respresentation headers: thells about the encoding in which the data is.
+    Payload headers: payload is nothing but data.
+
     
